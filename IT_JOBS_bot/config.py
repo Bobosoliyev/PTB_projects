@@ -2,24 +2,24 @@ import json
 from telegram import KeyboardButton,  ReplyKeyboardMarkup 
 
 
-TOKEN = "6781320797:AAEVuwOvQjXB4c7tm2jz_xQ8G0HhnpX4M0I"
-ADMIN_ID = 5502850858
-CHANNEL_ID = -1002123618835
+TOKEN = ""
+ADMIN_ID = 0000
+CHANNEL_ID = -100_0000
 
 
-with open("data.json", 'r') as file:
+with open("data/data.json", 'r') as file:
     data = json.load(file)
 
 def save_data(data):
-    with open('data.json', 'w') as file:
+    with open('data/data.json', 'w') as file:
         json.dump(data, file, indent = 4)
 
 
-with open("orders.json", 'r') as file:
+with open("data/orders.json", 'r') as file:
     orders = json.load(file)
     
 def save_order(orders = orders):
-    with open('orders.json', 'w') as file:
+    with open('data/orders.json', 'w') as file:
         json.dump(orders, file, indent = 4)
 
 steps = {
